@@ -1,14 +1,5 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from "react";
 
-export class AboutUsPage extends Component {
-  static propTypes = {}
-
-  render() {
-    return (
-      <div>AboutUsPage</div>
-    )
-  }
+export default function AboutUsPage() {
+  return <div className="text-3xl font-bold underline">AboutUsPage</div>;
 }
-
-export default AboutUsPage

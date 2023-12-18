@@ -1,25 +1,50 @@
-// Bringing in the required import from 'react-router-dom'
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import React from 'react';
 
-export default function Nav() {
-  // The Navbar UI component will render each of the Link elements in the links prop
+import { Link } from 'react-router-dom';
+
+
+const navigation = [
+  {
+    name: "home",
+    href: "/",
+  },
+  {
+    name: "about us",
+    href: "about",
+  },
+  {
+    name: "projects",
+    href: "projects",
+  },
+  {
+    name: "contact",
+    href: "contact",
+  },
+];
+
+const Nav = () => {
   return (
-    <Navbar
-      links={[
-        <Link key={1} className="nav-link text-light" to="/">
-          Home
-        </Link>,
-        <Link key={2} className="nav-link text-light" to="/about">
-          About Us
-        </Link>,
-        <Link key={3} className="nav-link text-light" to="/projects">
-          Projects
-        </Link>,
-        <Link key={4} className="nav-link text-light" to="/contact">
-          Contact
-        </Link>,
-      ]}
-    />
+    <nav>
+      <ul className='flex space-x-8 capitalize text-[15px]'>
+        {navigation.map((item, idx) => {
+          return (
+            <li
+              className='text-white hover:text-accent cursor-pointer'
+              key={idx}
+            >
+              <Link
+                to={item.href}
+                activeClass='active'
+                className='transition-all duration-300'
+              >
+                {item.name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
-}
+};
+
+export default Nav;

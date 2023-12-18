@@ -1,14 +1,5 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from "react";
 
-export class ContactPage extends Component {
-  static propTypes = {}
-
-  render() {
-    return (
-      <div>ContactPage</div>
-    )
-  }
+export default function ContactPage() {
+  return <div className="text-3xl font-bold underline">ContactPage</div>;
 }
-
-export default ContactPage

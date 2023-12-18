@@ -1,14 +1,5 @@
-import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from "react";
 
-export class ProjectsGallery extends Component {
-  static propTypes = {}
-
-  render() {
-    return (
-      <div>ProjectsGallery</div>
-    )
-  }
+export default function ProjectsGallery() {
+  return <div className="text-3xl font-bold underline">ProjectsGallery</div>;
 }
-
-export default ProjectsGallery

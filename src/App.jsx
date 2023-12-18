@@ -1,14 +1,11 @@
-import { Outlet } from 'react-router-dom';
-import Nav from './components/nav/Nav';
+import { Outlet } from "react-router-dom";
+import Header from "./components/header/Header";
 
-function App() {
-  // The Outlet component will conditionally swap between the different pages according to the URL
-  return (
-    <>
-      <Nav />
-      <Outlet />
-    </>
-  );
-}
+const App = () => (
+  <div className="bg-primary relative min-h-screen">
+    <Header />
+    <Outlet />
+  </div>
+);
 
 export default App;
