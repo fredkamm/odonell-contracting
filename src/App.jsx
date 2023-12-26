@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
 const App = () => (
-  <div className="bg-primary relative min-h-screen">
+  <div className="bg-secondary relative min-h-screen">
     <Header />
     <Outlet />
     <Footer />

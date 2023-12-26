@@ -5,9 +5,7 @@ const Header = () => {
     <header className="">
       <div className="">
         {/* nav */}
-        <div className="">
-          <Nav />
-        </div>
+        <Nav />
       </div>
     </header>
   );
