@@ -42,3 +42,35 @@
     @apply text-accent;
   }
 }
+
+/** Error page */
+.cover {
+	background-color: #00acf0;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0.75;
+	position: absolute;
+}
+img {
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
+}
+.errorNumber{
+	font-size:144px;
+	margin-bottom:0px;
+	color:#fff;
+	font-family:Poppins, sans-serif;
+}
+.errorText, a{
+	color:#fff;
+	font-size:18px;
+	font-family:Poppins, sans-serif;
+}
