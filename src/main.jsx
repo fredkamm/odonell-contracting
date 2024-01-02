@@ -10,6 +10,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import ProjectsGallery from "./pages/ProjectsGallery.jsx";
 
 import "./index.css";
+import ServicesPage from "./pages/ServicesPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: 'projects',
         element: <ProjectsGallery />,
+      },
+      {
+        path: 'services',
+        element: <ServicesPage />,
       },
       {
         path: 'contact',

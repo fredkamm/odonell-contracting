@@ -5,14 +5,14 @@ const contact = [
   {
     icon: <FiMail />,
     title: "Have a question?",
-    subtitle: "Reach out to me directly",
+    subtitle: "Reach out directly",
     description: "email@gmail.com",
   },
   {
     icon: <FiMapPin />,
     title: "Location",
     subtitle: "Bucks County, Pennsylvania",
-    description: "Serving clients througbout the Mid-Atlantic region.",
+    description: "Serving clients throughout the Mid-Atlantic region.",
   },
 ];
 
@@ -68,11 +68,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="section bg-primary" id="contact">
+    <section className="section bg-tertiary" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
-            Contact me
+            Contact Information
           </h2>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row pt-10">

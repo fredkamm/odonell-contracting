@@ -4,7 +4,9 @@ import Footer from "./components/footer/Footer";
 
 const App = () => (
   <div className="bg-secondary relative min-h-screen">
-    <Header />
+    <div className="py-9">
+      <Header />
+    </div>
     <Outlet />
     <Footer />
   </div>
