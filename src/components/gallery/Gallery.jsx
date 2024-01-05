@@ -116,7 +116,7 @@ const Gallery = () => {
           })}
         </ul>
       </nav>
-      <section className="grid gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8">
+      <section className="grid gap-y-12 md:grid-cols-2 md:gap-x-6 md:gap-y-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8">
         {projects.map((item) => {
           return <GalleryInfo item={item} key={item.id} />;
         })}

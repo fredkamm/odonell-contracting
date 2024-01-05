@@ -5,7 +5,11 @@ const GalleryInfo = ({ item }) => {
     <div key={item.id} className="flex flex-col items-center text-center">
       <div className="mb-8">
         <a className="text-base" href={item.href}>
-          <img className="rounded-2xl" src={item.image} alt="" />
+          <img
+            className="rounded-2xl md:h-[300px] lg:h-[300px]"
+            src={item.image}
+            alt=""
+          />
         </a>
       </div>
       <p className="capitalize text-accent text-sm mb-3">{item.category}</p>
