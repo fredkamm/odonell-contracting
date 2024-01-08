@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
@@ -55,6 +57,12 @@ export default function Carousel() {
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full bg-center bg-cover duration-500"
       ></div>
+      <Link 
+        className="flex justify-center px-4 py-2 bg-blue-500 text-white rounded-md"
+        to="/Projects"
+      >
+        View Gallery
+      </Link>
       {/* Left Arrow */}
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
@@ -69,8 +77,8 @@ export default function Carousel() {
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
             className={`text-2xl cursor-pointer ${
-                currentIndex === slideIndex ? "text-accent" : "text-gray-500"
-              }`}
+              currentIndex === slideIndex ? "text-accent" : "text-gray-500"
+            }`}
           >
             <RxDotFilled />
           </div>

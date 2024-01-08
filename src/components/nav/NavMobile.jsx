@@ -101,9 +101,6 @@ const NavMobile = () => {
               <Link
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                smooth={true}
-                duration={500}
-                offset={-70}
                 className='text-xl cursor-pointer capitalize'
               >
                 {item.name}

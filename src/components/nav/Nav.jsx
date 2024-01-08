@@ -1,7 +1,5 @@
-import React from 'react';
-
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   {
@@ -10,42 +8,40 @@ const navigation = [
   },
   {
     name: "about us",
-    href: "about",
+    href: "/about",
   },
   {
     name: "projects",
-    href: "projects",
+    href: "/projects",
   },
   {
     name: "services",
-    href: "services",
+    href: "/services",
   },
   {
     name: "contact",
-    href: "contact",
+    href: "/contact",
   },
 ];
 
 const Nav = () => {
+  const location = useLocation();
+
   return (
     <nav>
-      <ul className='flex space-x-8 capitalize text-[15px]'>
-        {navigation.map((item, idx) => {
-          return (
-            <li
-              className='text-white hover:text-accent cursor-pointer'
-              key={idx}
+      <ul className="flex space-x-8 capitalize text-[15px]">
+        {navigation.map((item, idx) => (
+          <li className="cursor-pointer" key={idx}>
+            <Link
+              to={item.href}
+              className={`text-white hover:text-accent transition-all duration-300 ${
+                location.pathname === item.href ? "text-accent" : ""
+              }`}
             >
-              <Link
-                to={item.href}
-                activeClass='active'
-                className='transition-all duration-300'
-              >
-                {item.name}
-              </Link>
-            </li>
-          );
-        })}
+              {item.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

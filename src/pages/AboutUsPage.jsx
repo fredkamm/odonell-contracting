@@ -34,7 +34,7 @@ export default function AboutUsPage() {
                 unde necessitatibus? Odio, natus. Velit.
               </p>
             </div>
-            <Link to="/contact" smooth={true} duration={800}>
+            <Link to="/contact" >
               <button className="btn group btn-md bg-accent hover:bg-secondary-hover transition-all">
                 Contact me
                 <span className="group-hover:rotate-90 duration-300">
