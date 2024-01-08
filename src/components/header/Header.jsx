@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import Logo from '../../assets/images/logo(white).png';
 import Nav from "../nav/Nav";
 import Socials from "../nav/Socials";
-// import NavMobile from "../nav/NavMobile";
+import NavMobile from "../nav/NavMobile";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -33,9 +33,9 @@ const Header = () => {
           <Socials />
         </div>
         {/* nav mobile*/}
-        {/* <div className='md:hidden'>
+        <div className='md:hidden'>
           <NavMobile />
-        </div> */}
+        </div>
       </div>
     </header>
   );

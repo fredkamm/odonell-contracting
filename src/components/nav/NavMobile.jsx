@@ -1,38 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // import icons
-import { XIcon } from '@heroicons/react/outline';
-import { MenuAlt3Icon } from '@heroicons/react/outline';
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoChevronUp } from "react-icons/io5";
 
 // import Link
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // import framer
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 // import navigation data
 const navigation = [
-    {
-      name: "home",
-      href: "/",
-    },
-    {
-      name: "about us",
-      href: "about",
-    },
-    {
-      name: "projects",
-      href: "projects",
-    },
-    {
-      name: "services",
-      href: "services",
-    },
-    {
-      name: "contact",
-      href: "contact",
-    },
-  ];
+  {
+    name: "home",
+    href: "/",
+  },
+  {
+    name: "about us",
+    href: "about",
+  },
+  {
+    name: "projects",
+    href: "projects",
+  },
+  {
+    name: "services",
+    href: "services",
+  },
+  {
+    name: "contact",
+    href: "contact",
+  },
+];
 
 // import components
 // import Socials from '../../helpers/Socials';
@@ -47,7 +47,7 @@ const NavMobile = () => {
     visible: {
       scale: 180,
       transition: {
-        type: 'spring',
+        type: "spring",
         stiffness: 160,
         damping: 60,
       },
@@ -65,43 +65,43 @@ const NavMobile = () => {
   };
 
   return (
-    <nav className='relative'>
-      <div
+    <nav className="relative">
+      <motion.div
         onClick={() => setIsOpen(true)}
-        className='cursor-pointer text-white'
+        className="cursor-pointer text-white"
       >
-        <MenuAlt3Icon className='w-8 h-8' />
-      </div>
+        <RxHamburgerMenu className="w-8 h-8" />
+      </motion.div>
 
       {/* circle */}
       <motion.div
         variants={circleVariants}
-        initial='hidden'
-        animate={isOpen ? 'visible' : 'hidden'}
-        className='w-4 h-4 rounded-full bg-accent fixed top-0 right-0'
+        initial="hidden"
+        animate={isOpen ? "visible" : "hidden"}
+        className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
       ></motion.div>
 
       <motion.ul
         variants={ulVariants}
-        initial='hidden'
-        animate={isOpen ? 'visible' : ''}
+        initial="hidden"
+        animate={isOpen ? "visible" : ""}
         className={`${
-          isOpen ? 'right-0' : '-right-full'
+          isOpen ? "right-0" : "-right-full"
         } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
       >
         <div
           onClick={() => setIsOpen(false)}
-          className='cursor-pointer absolute top-8 right-8'
+          className="cursor-pointer absolute top-8 right-8"
         >
-          <XIcon className='w-8 h-8' />
+          <IoChevronUp className="w-8 h-8" />
         </div>
         {navigation.map((item, idx) => {
           return (
-            <li key={idx} className='mb-8'>
+            <li key={idx} className="mb-8">
               <Link
                 to={item.href}
                 onClick={() => setIsOpen(false)}
-                className='text-xl cursor-pointer capitalize'
+                className="text-xl cursor-pointer capitalize"
               >
                 {item.name}
               </Link>
