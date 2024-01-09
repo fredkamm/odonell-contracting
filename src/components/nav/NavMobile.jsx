@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // import icons
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoChevronUp } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 // import Link
 import { Link } from "react-router-dom";
@@ -35,7 +35,7 @@ const navigation = [
 ];
 
 // import components
-// import Socials from '../../helpers/Socials';
+import Socials from '../nav/Socials';
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +78,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
-        className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
+        className="w-4 h-4 rounded-full bg-tertiary fixed top-0 right-0"
       ></motion.div>
 
       <motion.ul
@@ -93,7 +93,7 @@ const NavMobile = () => {
           onClick={() => setIsOpen(false)}
           className="cursor-pointer absolute top-8 right-8"
         >
-          <IoChevronUp className="w-8 h-8" />
+          <IoClose className="w-8 h-8" />
         </div>
         {navigation.map((item, idx) => {
           return (
@@ -108,7 +108,7 @@ const NavMobile = () => {
             </li>
           );
         })}
-        {/* <Socials /> */}
+        <Socials />
       </motion.ul>
     </nav>
   );
