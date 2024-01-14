@@ -34,9 +34,7 @@ const Nav = () => {
           <li className="cursor-pointer" key={idx}>
             <Link
               to={item.href}
-              className={`text-white hover:text-accent transition-all duration-300 ${
-                location.pathname === item.href ? "text-accent" : ""
-              }`}
+              className={`${location.pathname === item.href ? 'active' : ' text-white hover:text-accent transition-all duration-300'}`}
             >
               {item.name}
             </Link>

@@ -2,7 +2,6 @@ import React from "react";
 
 // import icons
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { TiSocialInstagram } from "react-icons/ti";
 
 const social = [
   {
