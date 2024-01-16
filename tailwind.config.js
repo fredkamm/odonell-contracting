@@ -22,17 +22,15 @@ module.exports = {
       },
       extend: {
         colors: {
-          primary: '#050402',
+          primary: '#33DB18',
           secondary: '#1C1D24',
           tertiary: '#131419',
+          buttons: '#5685BF',
           accent: {
-            DEFAULT: '#b3ffb3',
+            DEFAULT: '#5685BF',
             hover: '#2d545e',
           },
           paragraph: '#949fb0',
-        },
-        textColor: {
-          'active-link': '#131419', // Change this to the color you want
         },
       },
     },

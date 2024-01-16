@@ -137,7 +137,7 @@ const Contact = () => {
               onChange={handleInputChange}
               required
             ></textarea>
-            <button className="btn btn-lg bg-accent hover:bg-secondary-hover">
+            <button className="btn btn-lg bg-buttons hover:bg-tertiary hover:border-white">
               Send message
             </button>
           </form>

@@ -13,23 +13,23 @@ import { motion } from "framer-motion";
 // import navigation data
 const navigation = [
   {
-    name: "home",
+    name: "Home",
     href: "/",
   },
   {
-    name: "about us",
+    name: "About Us",
     href: "about",
   },
   {
-    name: "projects",
+    name: "Projects",
     href: "projects",
   },
   {
-    name: "services",
+    name: "Services",
     href: "services",
   },
   {
-    name: "contact",
+    name: "Contact",
     href: "contact",
   },
 ];
