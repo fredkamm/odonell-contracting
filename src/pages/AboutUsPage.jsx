@@ -6,7 +6,7 @@ import Image from "../assets/images/placeHolder.png";
 
 export default function AboutUsPage() {
   return (
-    <section className="section bg-secondary">
+    <section className="section bg-secondary my-[100px]">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img
@@ -36,10 +36,10 @@ export default function AboutUsPage() {
             </div>
             <Link to="/contact" >
               <button className="btn group btn-md bg-buttons hover:bg-tertiary transition-all">
-                Contact me
-                <span className="group-hover:rotate-90 duration-300">
+                Contact Us
+                {/* <span className="group-hover:rotate-360 duration-300">
                   <HiArrowNarrowRight className="ml-3" />
-                </span>
+                </span> */}
               </button>
             </Link>
           </div>
