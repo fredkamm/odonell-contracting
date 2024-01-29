@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import Logo from '../../assets/images/logo(white).png';
 import Nav from "../nav/Nav";
 import Socials from "../nav/Socials";
 import NavMobile from "../nav/NavMobile";
+import Logo from '../../assets/images/url_logo.png'
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -21,9 +23,9 @@ const Header = () => {
     >
       <div className='container mx-auto h-full flex items-center justify-between'>
         {/* logo */}
-        <a href=''>
-          {/* <img className='h-[100px]' src={Logo} alt='' /> */}
-        </a>
+        <Link to='/'>
+          <img className='max-h-[55px] max-w-[51px]' src={Logo} alt='' />
+        </Link>
         {/* nav */}
         <div className='hidden md:block'>
           <Nav />

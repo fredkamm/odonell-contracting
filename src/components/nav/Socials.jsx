@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 const social = [
   {
     icon: <FaFacebook />,
-    href: "linktofacebook",
+    href: "https://www.facebook.com/TJODHomeImprovement/",
   },
   {
     icon: <FaInstagram />,
