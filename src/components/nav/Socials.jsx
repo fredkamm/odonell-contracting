@@ -21,10 +21,10 @@ const Socials = () => {
         {social.map((item, index) => {
           return (
             <li
-              className="flex justify-center items-center text-accent"
+              className="flex justify-center items-center"
               key={index}
             >
-              <a className="text-base" href={item.href}>
+              <a className="text-base hover:text-accent-hover transition-all duration-300" href={item.href}>
                 {item.icon}
               </a>
             </li>

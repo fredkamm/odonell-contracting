@@ -25,10 +25,10 @@ module.exports = {
           primary: '#33DB18',
           secondary: '#1C1D24',
           tertiary: '#131419',
-          buttons: '#5685BF',
+          buttons: '#00A651',
           accent: {
-            DEFAULT: '#5685BF',
-            hover: '#2d545e',
+            DEFAULT: '#42d664',
+            hover: '#00A651',
           },
           paragraph: '#949fb0',
         },
