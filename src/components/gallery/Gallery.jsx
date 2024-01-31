@@ -14,7 +14,6 @@ const projectsData = [
   {
     id: "1",
     image: BathroomOne,
-    href: BathroomOne,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "bathroom",
@@ -22,7 +21,6 @@ const projectsData = [
   {
     id: "2",
     image: BathroomTwo,
-    href: BathroomTwo,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
@@ -30,7 +28,6 @@ const projectsData = [
   {
     id: "3",
     image: BathroomThree,
-    href: BathroomThree,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
@@ -38,7 +35,6 @@ const projectsData = [
   {
     id: "4",
     image: BathroomFour,
-    href: BathroomFour,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
@@ -46,7 +42,6 @@ const projectsData = [
   {
     id: "5",
     image: KitchenOne,
-    href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Kitchen",
@@ -54,7 +49,6 @@ const projectsData = [
   {
     id: "6",
     image: Image,
-    href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Decks",
@@ -85,7 +79,6 @@ const Gallery = () => {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    console.log(item);
     if (item.name) {
       const newProjects = projectsData.filter((project) => {
         return project.category.toLowerCase() === item.name;
