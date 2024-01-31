@@ -1,47 +1,56 @@
 import React, { useState, useEffect } from "react";
 
+import GalleryInfo from "./GalleryInfo";
 import Image from "../../assets/images/placeHolder.png";
+import BathroomOne from "../../assets/projects/bathroom_1.png";
+import BathroomTwo from "../../assets/projects/bathroom_2.png";
+import BathroomThree from "../../assets/projects/bathroom_3.png";
+import BathroomFour from "../../assets/projects/bathroom_4.png";
+
+import KitchenOne from "../../assets/projects/kitchen_1.png";
+
+
 
 const projectsData = [
   {
     id: "1",
-    image: Image,
+    image: BathroomOne,
     href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Category 1",
+    category: "Bathroom",
   },
   {
     id: "2",
-    image: Image,
+    image: BathroomTwo,
     href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Category 2",
+    category: "Bathroom",
   },
   {
     id: "3",
-    image: Image,
+    image: BathroomThree,
     href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Category 3",
+    category: "Bathroom",
   },
   {
     id: "4",
-    image: Image,
+    image: BathroomFour,
     href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Category 1",
+    category: "Bathroom",
   },
   {
     id: "5",
-    image: Image,
+    image: KitchenOne,
     href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Category 2",
+    category: "Kitchen",
   },
   {
     id: "6",
@@ -49,7 +58,7 @@ const projectsData = [
     href: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80",
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Category 3",
+    category: "Decks",
   },
 ];
 
@@ -58,17 +67,22 @@ const projectsNav = [
     name: "all",
   },
   {
-    name: "Category 1",
+    name: "Bathroom",
   },
   {
-    name: "Category 2",
+    name: "Kitchen",
   },
   {
-    name: "Category 3",
+    name: "Painting",
+  },
+  {
+    name: "Stairs&Decks",
+  },
+  {
+    name: "Doors&Windows",
   },
 ];
 
-import GalleryInfo from "./GalleryInfo";
 
 const Gallery = () => {
   const [item, setItem] = useState({ name: "all" });
