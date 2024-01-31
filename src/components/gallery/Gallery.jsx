@@ -10,8 +10,6 @@ import BathroomFour from "../../assets/projects/bathroom_4.png";
 
 import KitchenOne from "../../assets/projects/kitchen_1.png";
 
-
-
 const projectsData = [
   {
     id: "1",
@@ -19,7 +17,7 @@ const projectsData = [
     href: BathroomOne,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Bathroom",
+    category: "bathroom",
   },
   {
     id: "2",
@@ -65,35 +63,30 @@ const projectsData = [
 
 const projectsNav = [
   {
-    name: "all",
+    name: "bathroom",
   },
   {
-    name: "Bathroom",
+    name: "kitchen",
   },
   {
-    name: "Kitchen",
+    name: "painting",
   },
   {
-    name: "Painting",
+    name: "stairs&decks",
   },
   {
-    name: "Stairs&Decks",
-  },
-  {
-    name: "Doors&Windows",
+    name: "doors&windows",
   },
 ];
 
-
 const Gallery = () => {
-  const [item, setItem] = useState({ name: "all" });
+  const [item, setItem] = useState({ name: "bathroom" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (item.name === "all") {
-      setProjects(projectsData);
-    } else {
+    console.log(item);
+    if (item.name) {
       const newProjects = projectsData.filter((project) => {
         return project.category.toLowerCase() === item.name;
       });
@@ -102,6 +95,7 @@ const Gallery = () => {
   }, [item]);
 
   const handleClick = (e, index) => {
+    
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };

@@ -8,9 +8,9 @@ import HomePage from "./pages/HomePage.jsx";
 import AboutUsPage from "./pages/AboutUsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import ProjectsGallery from "./pages/ProjectsGallery.jsx";
+import ServicesPage from "./pages/ServicesPage.jsx";
 
 import "./index.css";
-import ServicesPage from "./pages/ServicesPage.jsx";
 
 const router = createBrowserRouter([
   {
