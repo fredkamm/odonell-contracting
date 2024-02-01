@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Carousel from "../components/carousel/Carousel";
 import BannerImage from "../assets/images/banner.png";
-import Image from "../assets/images/placeHolder.png";
+import Image from "../assets/images/odonnell_logo_larger.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -67,7 +67,7 @@ export default function HomePage() {
       <section className="container mx-auto my-[200px]">
         <div className="flex flex-col md:flex-row gap-24">
           <img
-            className="object-cover h-full w-[250px] mx-auto md:mx-auto rounded-2xl"
+            className="object-cover h-full w-[250px] mx-auto md:mx-auto rounded-2xl scale-110"
             src={Image}
             alt=""
           />

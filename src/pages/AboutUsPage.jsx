@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-import Image from "../assets/images/placeHolder.png";
+import Image from "../assets/images/odonnell_logo_larger.jpg";
 
 export default function AboutUsPage() {
   return (
@@ -10,7 +10,7 @@ export default function AboutUsPage() {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img
-            className="object-cover h-full w-[500px] md:mx-auto lg:mx-0 rounded-2xl"
+            className="object-cover h-full w-[500px] md:mx-auto lg:mx-0 rounded-2xl scale-105"
             src={Image}
             alt=""
           />
