@@ -6,7 +6,7 @@ const contact = [
     icon: <FiMail />,
     title: "Have a question?",
     subtitle: "Reach out directly",
-    description: "email@gmail.com",
+    description: "tjodhomeimprovement@gmail.com",
   },
   {
     icon: <FiMapPin />,

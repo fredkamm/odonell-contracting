@@ -3,12 +3,13 @@ import React, { useState, useEffect } from "react";
 import GalleryInfo from "./GalleryInfo";
 
 import Image from "../../assets/images/placeHolder.png";
-import BathroomOne from "../../assets/projects/bathroom_1.png";
-import BathroomTwo from "../../assets/projects/bathroom_2.png";
-import BathroomThree from "../../assets/projects/bathroom_3.png";
-import BathroomFour from "../../assets/projects/bathroom_4.png";
+import BathroomOne from "../../assets/projects/bathroom/bathroom_1.png";
+import BathroomTwo from "../../assets/projects/bathroom/bathroom_2.png";
+import BathroomThree from "../../assets/projects/bathroom/bathroom_3.png";
+import BathroomFour from "../../assets/projects/bathroom/bathroom_4.png";
 
-import KitchenOne from "../../assets/projects/kitchen_1.png";
+import KitchenOne from "../../assets/projects/kitchen/kitchen_1.png";
+import KitchenTwo from "../../assets/projects/kitchen/kitchen_2.jpg";
 
 const projectsData = [
   {
@@ -48,10 +49,10 @@ const projectsData = [
   },
   {
     id: "6",
-    image: Image,
+    image: KitchenTwo,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    category: "Decks",
+    category: "Kitchen",
   },
 ];
 
@@ -88,7 +89,6 @@ const Gallery = () => {
   }, [item]);
 
   const handleClick = (e, index) => {
-    
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
   };
@@ -97,27 +97,25 @@ const Gallery = () => {
     <div>
       <nav className="mb-12 max-w-xl mx-auto">
         <ul className="flex flex-col md:flex-row justify-evenly items-center text-white">
-          {projectsNav.map((item, index) => {
-            return (
-              <li
-                onClick={(e) => {
-                  handleClick(e, index);
-                }}
-                className={`${
-                  active === index ? "active" : ""
-                } cursor-pointer capitalize m-4`}
-                key={index}
-              >
-                {item.name}
-              </li>
-            );
-          })}
+          {projectsNav.map((item, index) => (
+            <li
+              onClick={(e) => {
+                handleClick(e, index);
+              }}
+              className={`${
+                active === index ? "active" : ""
+              } cursor-pointer capitalize m-4`}
+              key={index}
+            >
+              {item.name}
+            </li>
+          ))}
         </ul>
       </nav>
       <section className="grid gap-y-12 md:grid-cols-2 md:gap-x-6 md:gap-y-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8">
-        {projects.map((item) => {
-          return <GalleryInfo item={item} key={item.id} />;
-        })}
+        {projects.map((project) => (
+          <GalleryInfo item={project} key={project.id} />
+        ))}
       </section>
     </div>
   );
