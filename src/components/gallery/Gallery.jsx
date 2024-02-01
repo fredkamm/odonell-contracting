@@ -2,58 +2,73 @@ import React, { useState, useEffect } from "react";
 
 import GalleryInfo from "./GalleryInfo";
 
-import Image from "../../assets/images/placeHolder.png";
 import BathroomOne from "../../assets/projects/bathroom/bathroom_1.png";
 import BathroomTwo from "../../assets/projects/bathroom/bathroom_2.png";
 import BathroomThree from "../../assets/projects/bathroom/bathroom_3.png";
 import BathroomFour from "../../assets/projects/bathroom/bathroom_4.png";
+import BathroomFourSmall from "../../assets/projects/bathroom/bathroom_4_small.jpg";
+// import BathroomFiveLarge from "../../assets/projects/bathroom/bathroom_5_large.jpg";
+// import BathroomFiveSmall from "../../assets/projects/bathroom/bathroom_5_small.jpg";
 
-import KitchenOne from "../../assets/projects/kitchen/kitchen_1.png";
+import KitchenOne from "../../assets/projects/kitchen/kitchen_1_large.jpg";
+import KitchenOneSmall from "../../assets/projects/kitchen/kitchen_1_small.jpg";
 import KitchenTwo from "../../assets/projects/kitchen/kitchen_2.jpg";
+import KitchenTwoSmall from "../../assets/projects/kitchen/kitchen_2small.jpg";
 
 const projectsData = [
   {
     id: "1",
-    image: BathroomOne,
+    smallImage: BathroomOne,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "bathroom",
   },
   {
     id: "2",
-    image: BathroomTwo,
+    smallImage: BathroomTwo,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
   },
   {
     id: "3",
-    image: BathroomThree,
+    smallImage: BathroomThree,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
   },
   {
     id: "4",
-    image: BathroomFour,
+    smallImage: BathroomFourSmall,
+    largeImage: BathroomFour,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
   },
   {
     id: "5",
-    image: KitchenOne,
+    smallImage: KitchenOneSmall,
+    largeImage: KitchenOne,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Kitchen",
   },
   {
     id: "6",
-    image: KitchenTwo,
+    smallImage: KitchenTwo,
+    largeImage: KitchenTwoSmall,
     name: "Title",
     description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Kitchen",
   },
+  // {
+  //   id: "7",
+  //   smallImage: BathroomFiveSmall,
+  //   largeImage: BathroomFiveLarge,
+  //   name: "Title",
+  //   description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //   category: "Bathroom",
+  // },
 ];
 
 const projectsNav = [

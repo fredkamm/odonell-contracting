@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-import KitchenOne from "../../assets/projects/kitchen/kitchen_2.jpg";
+import KitchenOne from "../../assets/projects/kitchen/kitchen_1_large.jpg";
 import BathroomOne from "../../assets/projects/bathroom/bathroom_4.png"
 
 export default function Carousel() {

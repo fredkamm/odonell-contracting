@@ -7,8 +7,8 @@ const GalleryInfo = ({ item }) => {
       <div className="text-base">
         <ModalImage
           className="rounded-2xl h-[600px] md:h-[400px] w-fit-content h-fit-content"
-          small={item.image}
-          large={item.image}
+          small={item.smallImage}
+          large={item.largeImage || item.smallImage}
           alt=""
         />
       </div>
