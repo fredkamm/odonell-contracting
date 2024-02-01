@@ -68,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="section bg-tertiary">
+    <section className="section bg-secondary">
       <div className="container mx-auto mt-5">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
@@ -102,7 +102,7 @@ const Contact = () => {
           >
             <div className="flex gap-8">
               <input
-                className="input"
+                className="input bg-tertiary rounded"
                 type="text"
                 name="name"
                 placeholder="Your name"
@@ -111,7 +111,7 @@ const Contact = () => {
                 required
               />
               <input
-                className="input"
+                className="input bg-tertiary rounded"
                 type="email"
                 name="email"
                 placeholder="Your email"
@@ -121,7 +121,7 @@ const Contact = () => {
               />
             </div>
             <input
-              className="input"
+              className="input bg-tertiary rounded"
               type="text"
               name="subject"
               placeholder="Subject"
@@ -130,14 +130,14 @@ const Contact = () => {
               required
             />
             <textarea
-              className="textarea"
+              className="textarea bg-tertiary rounded"
               name="message"
               placeholder="Your message"
               value={formData.message}
               onChange={handleInputChange}
               required
             ></textarea>
-            <button className="btn btn-lg bg-buttons hover:bg-tertiary hover:border-white">
+            <button className="btn btn-lg bg-buttons hover:bg-tertiary hover:border-white rounded">
               Send message
             </button>
           </form>

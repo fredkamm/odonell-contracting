@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Carousel from "../components/carousel/Carousel";
 import BannerImage from "../assets/images/banner.png";
-import Image from "../assets/images/odonnell_logo_larger.jpg";
+import Image from "../assets/images/odonnell_logo.png";
 
 import { Link } from "react-router-dom";
 
@@ -99,12 +99,12 @@ export default function HomePage() {
             </h2>
           </div>
           <form
-            className="space-y-8 w-full max-w-[780px] bg-white p-8 mx-auto"
+            className="space-y-8 w-full max-w-[780px p-8 mx-auto"
             onSubmit={handleSubmit}
           >
             <div className="flex gap-8">
               <input
-                className="input"
+                className="input bg-tertiary rounded"
                 type="text"
                 name="name"
                 placeholder="Your name"
@@ -113,7 +113,7 @@ export default function HomePage() {
                 required
               />
               <input
-                className="input"
+                className="input bg-tertiary rounded"
                 type="email"
                 name="email"
                 placeholder="Your email"
@@ -123,7 +123,7 @@ export default function HomePage() {
               />
             </div>
             <input
-              className="input"
+              className="input bg-tertiary rounded"
               type="text"
               name="subject"
               placeholder="Subject"
@@ -132,14 +132,14 @@ export default function HomePage() {
               required
             />
             <textarea
-              className="textarea"
+              className="textarea bg-tertiary rounded"
               name="message"
               placeholder="Your message"
               value={formData.message}
               onChange={handleInputChange}
               required
             ></textarea>
-            <button className="btn btn-lg bg-buttons hover:bg-tertiary hover:border-white">
+            <button className="btn btn-lg bg-buttons hover:bg-tertiary hover:border-white rounded">
               Send message
             </button>
           </form>

@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HiArrowNarrowRight } from "react-icons/hi";
 
-import Image from "../assets/images/odonnell_logo_larger.jpg";
+import Image from "../assets/images/odonnell_logo.png";
 
 export default function AboutUsPage() {
   return (
@@ -35,11 +34,8 @@ export default function AboutUsPage() {
               </p>
             </div>
             <Link to="/contact" >
-              <button className="btn group btn-md bg-buttons hover:bg-tertiary transition-all">
+              <button className="btn group btn-md bg-buttons hover:bg-tertiary transition-all rounded">
                 Contact Us
-                {/* <span className="group-hover:rotate-360 duration-300">
-                  <HiArrowNarrowRight className="ml-3" />
-                </span> */}
               </button>
             </Link>
           </div>
