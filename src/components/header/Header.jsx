@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import Logo from '../../assets/images/logo(white).png';
+
 import Nav from "../nav/Nav";
 import Socials from "../nav/Socials";
 import NavMobile from "../nav/NavMobile";
@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? 'bg-tertiary h-20' : 'bg-tertiary h-28'
+        bg ? 'bg-secondary h-20' : 'bg-secondary h-28'
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className='container mx-auto h-full flex items-center justify-between'>
