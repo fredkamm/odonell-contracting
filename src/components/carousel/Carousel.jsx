@@ -62,7 +62,7 @@ export default function Carousel() {
       ></div>
       <Link 
         className="flex justify-center p-4 bg-tertiary text-white"
-        to="/Projects"
+        to="/gallery"
       >
         View Gallery
       </Link>
