@@ -61,7 +61,7 @@ export default function Carousel() {
         className="w-full h-full bg-center bg-cover duration-500"
       ></div>
       <Link 
-        className="flex justify-center px-4 py-2 bg-tertiary text-white"
+        className="flex justify-center p-4 bg-tertiary text-white"
         to="/Projects"
       >
         View Gallery

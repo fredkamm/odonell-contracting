@@ -56,12 +56,13 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative mt-10">
+      <section className="relative mt-10 max-w-[1400px] w-full m-auto">
         <img className="h-[500px]" src={BannerImage} alt="banner" />
-        <Link to="/contact">
-          <button className="absolute bottom-[1rem] left-[20rem] transform -translate-x-1/2 -translate-y-1/2 bg-buttons hover:bg-tertiary px-8 py-3 rounded">
-            Contact Us
-          </button>
+        <Link
+          className="flex justify-center p-4 bg-tertiary text-white"
+          to="/Contact"
+        >
+          Contact Us
         </Link>
       </section>
       <section className="container mx-auto my-[200px]">
