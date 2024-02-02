@@ -7,8 +7,7 @@ import BathroomTwo from "../../assets/projects/bathroom/bathroom_2.png";
 import BathroomThree from "../../assets/projects/bathroom/bathroom_3.png";
 import BathroomFour from "../../assets/projects/bathroom/bathroom_4.png";
 import BathroomFourSmall from "../../assets/projects/bathroom/bathroom_4_small.jpg";
-// import BathroomFiveLarge from "../../assets/projects/bathroom/bathroom_5_large.jpg";
-// import BathroomFiveSmall from "../../assets/projects/bathroom/bathroom_5_small.jpg";
+import BathroomFive from "../../assets/projects/bathroom/bathroom_5.png";
 
 import KitchenOne from "../../assets/projects/kitchen/kitchen_1_large.jpg";
 import KitchenOneSmall from "../../assets/projects/kitchen/kitchen_1_small.jpg";
@@ -19,56 +18,44 @@ const projectsData = [
   {
     id: "1",
     smallImage: BathroomOne,
-    name: "Title",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    largeImage: BathroomOne,
     category: "bathroom",
   },
   {
     id: "2",
     smallImage: BathroomTwo,
-    name: "Title",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    largeImage: BathroomTwo,
     category: "Bathroom",
   },
   {
     id: "3",
     smallImage: BathroomThree,
-    name: "Title",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
   },
   {
     id: "4",
     smallImage: BathroomFourSmall,
     largeImage: BathroomFour,
-    name: "Title",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Bathroom",
   },
   {
     id: "5",
     smallImage: KitchenOneSmall,
     largeImage: KitchenOne,
-    name: "Title",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Kitchen",
   },
   {
     id: "6",
     smallImage: KitchenTwo,
     largeImage: KitchenTwoSmall,
-    name: "Title",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
     category: "Kitchen",
   },
-  // {
-  //   id: "7",
-  //   smallImage: BathroomFiveSmall,
-  //   largeImage: BathroomFiveLarge,
-  //   name: "Title",
-  //   description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  //   category: "Bathroom",
-  // },
+  {
+    id: "7",
+    smallImage: BathroomFive,
+    largeImage: BathroomFive,
+    category: "Bathroom",
+  },
 ];
 
 const projectsNav = [
