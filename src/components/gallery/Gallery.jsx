@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import GalleryInfo from "./GalleryInfo";
 
-import BathroomOne from "../../assets/projects/bathroom/bathroom_1.png";
+import BathroomOne from "../../assets/projects/bathroom/bathroom_5.png";
 import BathroomTwo from "../../assets/projects/bathroom/bathroom_2.png";
 import BathroomThree from "../../assets/projects/bathroom/bathroom_3.png";
 import BathroomFour from "../../assets/projects/bathroom/bathroom_4.png";

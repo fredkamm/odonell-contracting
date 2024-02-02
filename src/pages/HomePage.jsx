@@ -75,7 +75,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <h2 className="text-3xl md:text-4xl font-medium md:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:md:block">
-                Thomas J. O'Donnel Home Improvement
+                Thomas J. O'Donnel <br/> Home Improvement
               </h2>
               <p className="mb-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
