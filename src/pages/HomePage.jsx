@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 import Carousel from "../components/carousel/Carousel";
 import BannerImage from "../assets/images/banner.png";
@@ -35,21 +36,25 @@ export default function HomePage() {
     }
 
     try {
-      const response = await fetch("getformlinkhere", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      await emailjs.send(
+        "service_bc6n4hq", // replace with your service ID
+        "template_z6yv3d7", // replace with your template ID
+        formData,
+        { publicKey: "gXnCJ306Ekx2TISpY" }
+      );
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to submit the form");
-      }
-
       alert("Form submitted successfully!");
+      console.log("Form submitted successfully!", formData);
     } catch (error) {
       console.error(error);
+      console.error(error.text);
       alert("Failed to submit the form. Please try again later.");
     }
   };
@@ -75,7 +80,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <h2 className="text-3xl md:text-4xl font-medium md:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:md:block">
-                Thomas J. O'Donnel <br/> Home Improvement
+                Thomas J. O'Donnel <br /> Home Improvement
               </h2>
               <p className="mb-8">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { FiMail, FiMapPin } from "react-icons/fi";
 
 const contact = [
@@ -45,24 +46,25 @@ const Contact = () => {
     }
 
     try {
-      const response = await fetch(
-        "getformlinkhere",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
+      await emailjs.send(
+        "service_bc6n4hq", // replace with your service ID
+        "template_z6yv3d7", // replace with your template ID
+        formData,
+        { publicKey: "gXnCJ306Ekx2TISpY" }
       );
 
-      if (!response.ok) {
-        throw new Error("Failed to submit the form");
-      }
-
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      
       alert("Form submitted successfully!");
+      console.log("Form submitted successfully!", formData);
     } catch (error) {
       console.error(error);
+      console.error(error.text);
       alert("Failed to submit the form. Please try again later.");
     }
   };
