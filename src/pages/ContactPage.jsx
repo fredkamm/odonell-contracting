@@ -21,7 +21,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    address: "",
+    phone: "",
     message: "",
   });
 
@@ -56,15 +57,13 @@ const Contact = () => {
       setFormData({
         name: "",
         email: "",
-        subject: "",
+        address: "",
+        phone: "",
         message: "",
       });
 
       alert("Form submitted successfully!");
-      console.log("Form submitted successfully!", formData);
     } catch (error) {
-      console.error(error);
-      console.error(error.text);
       alert("Failed to submit the form. Please try again later.");
     }
   };
@@ -78,7 +77,7 @@ const Contact = () => {
           </h2>
         </div>
         <div className="flex flex-col lg:gap-x-8 lg:flex-row pt-10">
-          <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
+          <div className="flex flex-1 flex-col items-start space-y-8 mb-12 mx-auto lg:mb-0 lg:pt-2">
             {contact.map((item, index) => {
               const { icon, title, subtitle, description } = item;
               return (
@@ -102,9 +101,9 @@ const Contact = () => {
             className="space-y-8 w-full max-w-[780px]"
             onSubmit={handleSubmit}
           >
-            <div className="flex gap-8">
+            <div className="block md:flex gap-8">
               <input
-                className="input bg-tertiary rounded"
+                className="input bg-tertiary rounded mb-8 md:mb-0"
                 type="text"
                 name="name"
                 placeholder="Your name"
@@ -122,13 +121,13 @@ const Contact = () => {
                 required
               />
             </div>
-            <div className="flex gap-8">
+            <div className="block md:flex gap-8">
               <input
-                className="input bg-tertiary rounded"
+                className="input bg-tertiary rounded mb-8 md:mb-0"
                 type="text"
                 name="address"
                 placeholder="Your address"
-                value={formData.name}
+                value={formData.address}
                 onChange={handleInputChange}
                 required
               />
@@ -137,7 +136,7 @@ const Contact = () => {
                 type="text"
                 name="phone"
                 placeholder="Your phone number"
-                value={formData.email}
+                value={formData.phone}
                 onChange={handleInputChange}
                 required
               />

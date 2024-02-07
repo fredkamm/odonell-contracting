@@ -11,7 +11,8 @@ export default function HomePage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    address: "",
+    phone: "",
     message: "",
   });
 
@@ -46,7 +47,8 @@ export default function HomePage() {
       setFormData({
         name: "",
         email: "",
-        subject: "",
+        address: "",
+        phone: "",
         message: "",
       });
 
@@ -108,9 +110,9 @@ export default function HomePage() {
             className="space-y-8 w-full max-w-[780px p-8 mx-auto"
             onSubmit={handleSubmit}
           >
-            <div className="flex gap-8">
+            <div className="block md:flex gap-8">
               <input
-                className="input bg-tertiary rounded"
+                className="input bg-tertiary rounded mb-8 md:mb-0"
                 type="text"
                 name="name"
                 placeholder="Your name"
@@ -128,13 +130,13 @@ export default function HomePage() {
                 required
               />
             </div>
-            <div className="flex gap-8">
+            <div className="block md:flex gap-8">
               <input
-                className="input bg-tertiary rounded"
+                className="input bg-tertiary rounded mb-8 md:mb-0"
                 type="text"
                 name="address"
                 placeholder="Your address"
-                value={formData.name}
+                value={formData.address}
                 onChange={handleInputChange}
                 required
               />
@@ -143,7 +145,7 @@ export default function HomePage() {
                 type="text"
                 name="phone"
                 placeholder="Your phone number"
-                value={formData.email}
+                value={formData.phone}
                 onChange={handleInputChange}
                 required
               />
