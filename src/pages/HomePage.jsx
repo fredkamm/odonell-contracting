@@ -127,16 +127,25 @@ export default function HomePage() {
                 onChange={handleInputChange}
                 required
               />
+              <input
+                className="input bg-tertiary rounded"
+                type="text"
+                name="address"
+                placeholder="Your address"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+              <input
+                className="input bg-tertiary rounded"
+                type="text"
+                name="phone"
+                placeholder="Your phone number"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
             </div>
-            <input
-              className="input bg-tertiary rounded"
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleInputChange}
-              required
-            />
             <textarea
               className="textarea bg-tertiary rounded"
               name="message"
