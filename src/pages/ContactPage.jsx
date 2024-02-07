@@ -121,6 +121,8 @@ const Contact = () => {
                 onChange={handleInputChange}
                 required
               />
+            </div>
+            <div className="flex gap-8">
               <input
                 className="input bg-tertiary rounded"
                 type="text"
