@@ -39,7 +39,8 @@ const Contact = () => {
     if (
       !formData.name ||
       !formData.email ||
-      !formData.subject ||
+      !formData.address ||
+      !formData.phone ||
       !formData.message
     ) {
       alert("All fields must be filled out.");
@@ -48,7 +49,7 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_bc6n4hq", // replace with your service ID
+        "service_v5c8iy8", // replace with your service ID
         "template_z6yv3d7", // replace with your template ID
         formData,
         { publicKey: "gXnCJ306Ekx2TISpY" }
@@ -144,7 +145,7 @@ const Contact = () => {
             <textarea
               className="textarea bg-tertiary rounded"
               name="message"
-              placeholder="Your message"
+              placeholder="Please provide a detailed description of what your looking to get done here..."
               value={formData.message}
               onChange={handleInputChange}
               required

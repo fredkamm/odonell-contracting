@@ -29,7 +29,8 @@ export default function HomePage() {
     if (
       !formData.name ||
       !formData.email ||
-      !formData.subject ||
+      !formData.address ||
+      !formData.phone ||
       !formData.message
     ) {
       alert("All fields must be filled out.");
@@ -38,7 +39,7 @@ export default function HomePage() {
 
     try {
       await emailjs.send(
-        "service_bc6n4hq", // replace with your service ID
+        "service_v5c8iy8", // replace with your service ID
         "template_z6yv3d7", // replace with your template ID
         formData,
         { publicKey: "gXnCJ306Ekx2TISpY" }
@@ -153,7 +154,7 @@ export default function HomePage() {
             <textarea
               className="textarea bg-tertiary rounded"
               name="message"
-              placeholder="Your message"
+              placeholder="Provide a detailed description of what your looking to get done"
               value={formData.message}
               onChange={handleInputChange}
               required
