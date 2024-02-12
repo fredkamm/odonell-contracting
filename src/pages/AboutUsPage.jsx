@@ -5,7 +5,7 @@ import Image from "../assets/images/odonnell_logo.png";
 
 export default function AboutUsPage() {
   return (
-    <section className="section bg-secondary my-[100px]">
+    <section className="section bg-secondary my-[50px]">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img
@@ -16,24 +16,22 @@ export default function AboutUsPage() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block">
-              Thomas J. O'Donnel <br/> Home Improvement
+                Thomas J. O'Donnel <br /> Home Improvement
               </h2>
               <p className="mb-4 text-accent">
-                Established in 2024, we are a company that specializes in ...
+                Established in 2024, we are a company that specializes in
+                full-home restorations and renovations.
               </p>
               <hr className="mb-8 opacity-5" />
-              <p className="mb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                et, aliquam nemo ratione impedit eum provident velit! Odit est
-                accusamus neque atque corporis rerum, illum cumque, cum
-                similique tenetur sint.. <br></br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Ratione mollitia consequatur dolor, minima repudiandae nam quis
-                placeat accusamus dolores aut veniam voluptates est sed itaque
-                unde necessitatibus? Odio, natus. Velit.
+              <p className="mb-4 md:items-start md:text-left">
+                Welcome to Thomas J. Odonnell Home Improvement, where we turn
+                your home renovation dreams into reality. As a top provider of comprehensive renovation and restoration services, we take pride in our commitment to excellence and attention to detail. Whether you're envisioning a modern kitchen, a cozy deck, or a complete overhaul of your living space, our experienced team is here to guide you through every step of the process. 
+                </p>
+                <p className="mb-8 md:items-start md:text-left">
+                With a focus on transparent communication and collaborative planning, we work closely with you to ensure your project aligns seamlessly with your goals and budget. Ypu can trust us to be your reliable partner on the journey to a refreshed and rejuvenated home.
               </p>
             </div>
-            <Link to="/contact" >
+            <Link to="/contact">
               <button className="btn group btn-md bg-buttons hover:bg-tertiary transition-all rounded">
                 Contact Us
               </button>
