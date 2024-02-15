@@ -16,47 +16,53 @@ import KitchenTwo from "../../assets/projects/kitchen/kitchen_2.jpg";
 import KitchenTwoSmall from "../../assets/projects/kitchen/kitchen_2small.jpg";
 
 // Wall/Painting images
-import WallOne from "../../assets/projects/walls/wall_1.png"
-import WallOneSmall from "../../assets/projects/walls/wall.jpg"
-import WallTwo from "../../assets/projects/walls/wall_2.png"
+import WallOne from "../../assets/projects/walls/wall_1.png";
+import WallOneSmall from "../../assets/projects/walls/wall.jpg";
+import WallTwo from "../../assets/projects/walls/wall_2.png";
 
 // Decks/Stairs images
-import DeckOne from "../../assets/projects/decks/deck_1.png"
-import DeckOneSmall from "../../assets/projects/decks/deck_1_small.jpg"
-import DeckTwo from "../../assets/projects/decks/deck_2.png"
-import DeckTwoSmall from "../../assets/projects/decks/deck_2_small.jpg"
-import DeckThree from "../../assets/projects/decks/deck_3.png"
+import DeckOne from "../../assets/projects/decks/deck_1.png";
+import DeckOneSmall from "../../assets/projects/decks/deck_1_small.jpg";
+import DeckTwo from "../../assets/projects/decks/deck_2.png";
+import DeckTwoSmall from "../../assets/projects/decks/deck_2_small.jpg";
+import DeckThree from "../../assets/projects/decks/deck_3.png";
 
 // Windows/Doors images
-import WindowOne from "../../assets/projects/windows/windows_1.png"
-import WindowTwo from "../../assets/projects/windows/windows_2.png"
-import WindowThree from "../../assets/projects/windows/windows_3.png"
+import WindowOne from "../../assets/projects/windows/windows_1.png";
+import WindowTwo from "../../assets/projects/windows/windows_2.png";
+import WindowThree from "../../assets/projects/windows/windows_3.png";
+import WindowFour from "../../assets/projects/windows/windows_4.webp";
 
 // Flooring images
-import FlooringOne from "../../assets/projects/flooring/flooring_1.png"
+import FlooringOne from "../../assets/projects/flooring/flooring_1.png";
 
 const projectsData = [
   {
+    id: 1,
     smallImage: BathroomOne,
     largeImage: BathroomOne,
     category: "Bathroom",
   },
   {
+    id: 2,
     smallImage: BathroomTwo,
     largeImage: BathroomTwo,
     category: "Bathroom",
   },
   {
+    id: 3,
     smallImage: BathroomThree,
     category: "Bathroom",
   },
   {
+    id: 4,
     smallImage: BathroomFourSmall,
     largeImage: BathroomFour,
     category: "Bathroom",
   },
 
   {
+    id: 5,
     smallImage: KitchenOneSmall,
     largeImage: KitchenOne,
     category: "Kitchen",
@@ -68,49 +74,64 @@ const projectsData = [
   },
 
   {
+    id: 6,
     smallImage: WindowOne,
     largeImage: WindowOne,
     category: "doors&windows",
   },
   {
+    id: 7,
     smallImage: WindowTwo,
     largeImage: WindowTwo,
     category: "doors&windows",
   },
   {
+    id: 8,
     smallImage: WindowThree,
     largeImage: WindowThree,
     category: "doors&windows",
   },
+  {
+    id: 9,
+    smallImage: WindowFour,
+    largeImage: WindowFour,
+    category: "doors&windows",
+  },
 
   {
+    id: 10,
     smallImage: WallOneSmall,
     largeImage: WallOne,
     category: "walls&painting",
   },
   {
+    id: 11,
     smallImage: WallTwo,
     largeImage: WallTwo,
     category: "walls&painting",
   },
 
   {
+    id: 12,
     smallImage: FlooringOne,
     largeImage: FlooringOne,
     category: "flooring",
   },
 
   {
+    id: 13,
     smallImage: DeckOneSmall,
     largeImage: DeckOne,
     category: "stairs&decks",
   },
   {
+    id: 14,
     smallImage: DeckTwoSmall,
     largeImage: DeckTwo,
     category: "stairs&decks",
   },
   {
+    id: 15,
     smallImage: DeckThree,
     largeImage: DeckThree,
     category: "stairs&decks",
