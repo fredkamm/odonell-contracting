@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Image from "../assets/images/odonnell_logo.png";
+import Image from "../assets/images/odonnell_logo.webp";
 
 export default function AboutUsPage() {
   return (
