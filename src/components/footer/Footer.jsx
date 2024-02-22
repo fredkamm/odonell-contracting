@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 import Logo from "../../assets/images/url_logo.png";
 
 import { FaFacebook, FaInstagram } from "react-icons/fa";
@@ -32,9 +34,9 @@ export default function Footer() {
               {social.map((item, index) => {
                 const { href, icon } = item;
                 return (
-                  <a className="text-accent text-base" href={href} key={index}>
+                  <Link to={href} className="text-accent text-base"  key={index}>
                     {icon}
-                  </a>
+                  </Link>
                 );
               })}
             </div>
