@@ -85,7 +85,7 @@ export default function HomePage() {
               <h2 className="text-3xl md:text-4xl md:mt-10 font-medium mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:md:block">
                 Thomas J. O'Donnel <br /> Home Improvement
               </h2>
-              <hr className="mb-3 opacity-5" />
+              <hr className="mb-3 opacity-35" />
               <p className="mb-8">
                 Specializing in full-home restorations and renovations.
               </p>
@@ -153,7 +153,7 @@ export default function HomePage() {
               onChange={handleInputChange}
               required
             ></textarea>
-            <button className="btn btn-lg bg-buttons hover:bg-tertiary hover:border-white rounded">
+            <button className="btn btn-lg bg-buttons text-black hover:text-paragraph hover:bg-tertiary hover:border-white rounded">
               Send message
             </button>
           </form>
