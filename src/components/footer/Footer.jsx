@@ -8,10 +8,12 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 const social = [
   {
     icon: <FaFacebook />,
+    label: "Facebook",
     href: "https://www.facebook.com/TJODHomeImprovement/",
   },
   {
     icon: <FaInstagram />,
+    label: "Instagram",
     href: "linktoinstagram",
   },
 ];
@@ -32,9 +34,9 @@ export default function Footer() {
           <div className="flex flex-col">
             <div className="flex flex-row space-x-6 items-center justify-center">
               {social.map((item, index) => {
-                const { href, icon } = item;
+                const { href, icon, label } = item;
                 return (
-                  <Link to={href} className="text-accent text-base"  key={index}>
+                  <Link to={href} aria-label={label} className="text-accent text-base"  key={index}>
                     {icon}
                   </Link>
                 );

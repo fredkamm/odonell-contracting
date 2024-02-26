@@ -18,24 +18,24 @@ const navigation = [
   },
   {
     name: "About Us",
-    href: "about",
+    href: "/about",
   },
   {
     name: "Gallery",
-    href: "gallery",
+    href: "/gallery",
   },
   {
     name: "Services",
-    href: "services",
+    href: "/services",
   },
   {
     name: "Contact",
-    href: "contact",
+    href: "/contact",
   },
 ];
 
 // import components
-import Socials from '../nav/Socials';
+import Socials from "../nav/Socials";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +65,7 @@ const NavMobile = () => {
   };
 
   return (
-    <nav className="relative">
+    <nav className="relative" aria-label="Mobile Navigation">
       <motion.div
         onClick={() => setIsOpen(true)}
         className="cursor-pointer text-white"
@@ -95,19 +95,20 @@ const NavMobile = () => {
         >
           <IoClose className="w-8 h-8" />
         </div>
-        {navigation.map((item, idx) => {
-          return (
+        <ul className="flex flex-col items-center">
+          {navigation.map((item, idx) => (
             <li key={idx} className="mb-8">
               <Link
                 to={item.href}
+                aria-label={item.name}
                 onClick={() => setIsOpen(false)}
                 className="text-xl cursor-pointer capitalize"
               >
                 {item.name}
               </Link>
             </li>
-          );
-        })}
+          ))}
+        </ul>
         <Socials />
       </motion.ul>
     </nav>

@@ -28,12 +28,13 @@ const Nav = () => {
   const location = useLocation();
 
   return (
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul className="flex space-x-8 capitalize text-[15px]">
         {navigation.map((item, idx) => (
           <li className="cursor-pointer" key={idx}>
             <Link
               to={item.href}
+              aria-label={item.name}
               className={`${location.pathname === item.href ? 'active' : ' text-white hover:text-accent-hover transition-all duration-300'}`}
             >
               {item.name}
