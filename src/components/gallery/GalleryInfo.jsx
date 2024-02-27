@@ -9,7 +9,7 @@ const GalleryInfo = ({ item }) => {
           className="rounded-2xl h-[600px] md:h-[400px] w-fit-content h-fit-content"
           small={item.smallImage}
           large={item.largeImage || item.smallImage}
-          alt=""
+          alt="gallery image"
         />
       </div>
     </div>

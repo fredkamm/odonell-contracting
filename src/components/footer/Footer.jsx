@@ -24,9 +24,9 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col p-3 md:flex-row space-y-6 lg:space-y-3 items-center justify-around md:space-y-1">
           <div className="flex flex-col items-center">
-            <p>(215) 000-0000</p>
+            <p>(610) 348-4448</p>
             <p>tjodhomeimprovement@gmail.com</p>
-            <p>Bucks County, PA</p>
+            <p>Bucks & Montgomery County</p>
           </div>
           {/* <div>
             <img className="max-h-[55px] max-w-[51px]" src={Logo} alt="" />

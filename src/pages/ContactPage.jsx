@@ -7,13 +7,14 @@ const contact = [
     icon: <FiMail />,
     title: "Have a question?",
     subtitle: "Reach out directly",
+    phone: "(610) 348-4448",
     description: "tjodhomeimprovement@gmail.com",
   },
   {
     icon: <FiMapPin />,
     title: "Location",
     subtitle: "Bucks County, Pennsylvania",
-    description: "Serving clients throughout the Mid-Atlantic region.",
+    description: "Serving clients throughout Bucks and Montgomery County.",
   },
 ];
 
@@ -80,7 +81,7 @@ const Contact = () => {
         <div className="flex flex-col lg:gap-x-8 lg:flex-row pt-10">
           <div className="flex flex-1 flex-col items-start space-y-8 mb-12 mx-auto lg:mb-0 lg:pt-2">
             {contact.map((item, index) => {
-              const { icon, title, subtitle, description } = item;
+              const { icon, title, subtitle, phone, description } = item;
               return (
                 <div
                   className="flex flex-col lg:flex-row gap-x-4 sm:flex-row"
@@ -92,6 +93,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-body text-xl mb-1">{title}</h4>
                     <p className="mb-1 text-paragraph">{subtitle}</p>
+                    <p className="text-accent font-normal ">{phone}</p>
                     <p className="text-accent font-normal ">{description}</p>
                   </div>
                 </div>

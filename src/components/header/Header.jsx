@@ -24,7 +24,7 @@ const Header = () => {
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* logo */}
         <Link to="/" aria-label="Home">
-          <img className="max-h-[55px] max-w-[51px]" src={Logo} alt="" />
+          <img className="max-h-[55px] max-w-[51px]" src={Logo} alt="logo image" />
         </Link>
         {/* nav */}
         <div className="hidden md:block">

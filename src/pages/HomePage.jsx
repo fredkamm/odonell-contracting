@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import Carousel from "../components/carousel/Carousel";
 import BannerImage from "../assets/images/banner.webp";
-import Image from "../assets/images/odonnell_logo.webp";
+import Image from "../assets/images/TJOD_Logo.webp";
 
 import { Link } from "react-router-dom";
 
@@ -78,7 +78,7 @@ export default function HomePage() {
           <img
             className="object-cover h-full w-[250px] mx-auto md:mx-auto rounded-2xl scale-110"
             src={Image}
-            alt=""
+            alt="logo image"
           />
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">

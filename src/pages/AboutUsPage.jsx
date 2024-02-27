@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Image from "../assets/images/odonnell_logo.webp";
+import Image from "../assets/images/TJOD_Logo.webp";
 
 export default function AboutUsPage() {
   return (
@@ -11,7 +11,7 @@ export default function AboutUsPage() {
           <img
             className="object-cover h-full w-[500px] md:mx-auto lg:mx-0 rounded-2xl scale-105"
             src={Image}
-            alt=""
+            alt="Thomas J. O'Donnel Home Improvement Logo"
           />
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <div className="flex flex-col">
@@ -19,7 +19,7 @@ export default function AboutUsPage() {
                 Thomas J. O'Donnel <br /> Home Improvement
               </h2>
               <p className="mb-4 text-accent">
-                Established in 2024, we are a company that specializes in
+                Established in 2000, we are a company that specializes in
                 full-home restorations and renovations.
               </p>
               <hr className="mb-8 opacity-35" />
