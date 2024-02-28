@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-// import icons
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const social = [
@@ -13,29 +10,27 @@ const social = [
   {
     icon: <FaInstagram />,
     label: "Instagram",
-    href: "linktoinstagram",
+    href: "https://www.instagram.com/linktoinstagram/",
   },
 ];
 
 const Socials = () => {
   return (
-    <div className="flex space-x-4 ">
-      <ul className="flex space-x-4 ">
-        {social.map((item, index) => {
-          return (
-            <li className="flex justify-center items-center" key={index}>
-              <Link
-                className="text-base hover:text-accent-hover transition-all duration-300"
-                to={item.href}
-                aria-label={item.label}
-              >
-                {item.icon}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="flex space-x-4 " aria-label="Social Media Links">
+      {social.map((item, index) => (
+        <li className="flex justify-center items-center" key={index}>
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base hover:text-accent-hover transition-all duration-300"
+            aria-label={item.label}
+          >
+            {item.icon}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 
