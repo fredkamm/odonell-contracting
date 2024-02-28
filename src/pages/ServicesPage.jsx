@@ -107,7 +107,7 @@ function ServicesPage() {
                 <div className="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-12 text-[28px]">
                   {icon}
                 </div>
-                <h4 className="text-xl font-medium mb-2">{name}</h4>
+                <h3 className="text-xl font-medium mb-2">{name}</h3>
                 <p>{description}</p>
               </div>
             );
