@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-import KitchenOne from "../../assets/projects/kitchen/kitchen_1_large.jpg";
-import BathroomOne from "../../assets/projects/bathroom/bathroom_4.png"
+import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
+import KitchenOne from "../../assets/projects/kitchen/kitchen_1.webp";
 import WindowsOne from "../../assets/projects/windows/windows_4.png"
 import WallsOne from "../../assets/projects/walls/wall_2.png"
-import DecksOne from "../../assets/projects/decks/deck_1.png"
+import DecksOne from "../../assets/projects/decks/deck_1.webp"
 
 export default function Carousel() {
   const slides = [
     {
-      url: BathroomOne,
+      url: FlooringOne,
     },
     {
       url: KitchenOne,
