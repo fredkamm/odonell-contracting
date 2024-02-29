@@ -8,6 +8,9 @@ import BathroomThree from "../../assets/projects/bathroom/bathroom_3.webp";
 import BathroomFour from "../../assets/projects/bathroom/bathroom_4.webp";
 import BathroomFive from "../../assets/projects/bathroom/bathroom_5.webp";
 import BathroomSix from "../../assets/projects/bathroom/bathroom_6.webp";
+import BathroomSeven from "../../assets/projects/bathroom/bathroom_7.webp";
+import BathroomEight from "../../assets/projects/bathroom/bathroom_8.webp";
+import BathroomNine from "../../assets/projects/bathroom/bathroom_9.webp";
 
 import KitchenOne from "../../assets/projects/kitchen/kitchen_1.webp";
 import KitchenTwo from "../../assets/projects/kitchen/kitchen_2.webp";
@@ -64,82 +67,82 @@ const projectsData = [
   },
   {
     id: 7,
+    smallImage: BathroomSeven,
+    category: "Bathroom",
+  },
+  {
+    id: 8,
+    smallImage: BathroomEight,
+    category: "Bathroom",
+  },
+  {
+    id: 9,
+    smallImage: BathroomNine,
+    category: "Bathroom",
+  },
+  {
+    id: 10,
     smallImage: KitchenOne,
     category: "Kitchen",
   },
   {
-    id: 8,
+    id: 11,
     smallImage: KitchenTwo,
     category: "Kitchen",
   },
   {
-    id: 9,
+    id: 12,
     smallImage: KitchenThree,
     category: "Kitchen",
   },
   {
-    id: 10,
+    id: 13,
     smallImage: KitchenFour,
     category: "Kitchen",
   },
   {
-    id: 11,
+    id: 14,
     smallImage: KitchenFive,
     category: "Kitchen",
   },
   {
-    id: 12,
+    id: 15,
     smallImage: KitchenSix,
     category: "Kitchen",
   },
   {
-    id: 13,
+    id: 16,
     smallImage: WindowOne,
     category: "doors&windows",
   },
   {
-    id: 14,
+    id: 17,
     smallImage: WindowTwo,
     category: "doors&windows",
   },
   {
-    id: 15,
+    id: 18,
     smallImage: WindowThree,
     category: "doors&windows",
   },
   {
-    id: 16,
-    smallImage: WindowFour,
-    category: "doors&windows",
-  },
-  {
-    id: 17,
-    smallImage: WindowFour,
-    category: "doors&windows",
-  },
-  {
-    id: 18,
-    smallImage: WindowFour,
-    category: "doors&windows",
-  },
-  {
     id: 19,
-    smallImage: WallOneSmall,
-    category: "walls&painting",
+    smallImage: WindowFour,
+    category: "doors&windows",
   },
   {
     id: 20,
-    smallImage: WallTwo,
-    category: "walls&painting",
+    smallImage: WindowFour,
+    category: "doors&windows",
   },
   {
     id: 21,
-    smallImage: WallThree,
-    category: "walls&painting",
+    smallImage: WindowFour,
+    category: "doors&windows",
   },
   {
     id: 22,
-    smallImage: WallTwo,
+    smallImage: WallOneSmall,
     category: "walls&painting",
   },
   {
@@ -149,23 +152,23 @@ const projectsData = [
   },
   {
     id: 24,
-    smallImage: WallTwo,
+    smallImage: WallThree,
     category: "walls&painting",
   },
   {
     id: 25,
-    smallImage: FlooringOne,
-    category: "flooring",
+    smallImage: WallTwo,
+    category: "walls&painting",
   },
   {
     id: 26,
-    smallImage: FlooringThree,
-    category: "flooring",
+    smallImage: WallTwo,
+    category: "walls&painting",
   },
   {
     id: 27,
-    smallImage: FlooringThree,
-    category: "flooring",
+    smallImage: WallTwo,
+    category: "walls&painting",
   },
   {
     id: 28,
@@ -174,32 +177,32 @@ const projectsData = [
   },
   {
     id: 29,
-    smallImage: FlooringOne,
+    smallImage: FlooringThree,
     category: "flooring",
   },
   {
     id: 30,
-    smallImage: FlooringOne,
+    smallImage: FlooringThree,
     category: "flooring",
   },
   {
     id: 31,
-    smallImage: DeckOne,
-    category: "stairs&decks",
+    smallImage: FlooringOne,
+    category: "flooring",
   },
   {
     id: 32,
-    smallImage: DeckTwo,
-    category: "stairs&decks",
+    smallImage: FlooringOne,
+    category: "flooring",
   },
   {
     id: 33,
-    smallImage: DeckTwo,
-    category: "stairs&decks",
+    smallImage: FlooringOne,
+    category: "flooring",
   },
   {
     id: 34,
-    smallImage: DeckTwo,
+    smallImage: DeckOne,
     category: "stairs&decks",
   },
   {
@@ -209,6 +212,21 @@ const projectsData = [
   },
   {
     id: 36,
+    smallImage: DeckTwo,
+    category: "stairs&decks",
+  },
+  {
+    id: 37,
+    smallImage: DeckTwo,
+    category: "stairs&decks",
+  },
+  {
+    id: 38,
+    smallImage: DeckTwo,
+    category: "stairs&decks",
+  },
+  {
+    id: 39,
     smallImage: DeckTwo,
     category: "stairs&decks",
   },
