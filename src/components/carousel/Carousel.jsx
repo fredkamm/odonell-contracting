@@ -5,7 +5,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
 import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
-import KitchenOne from "../../assets/projects/kitchen/kitchen_1.webp";
+import KitchenOne from "../../assets/projects/kitchen/kitchen_4.webp";
 import WindowsOne from "../../assets/projects/windows/windows_4.png"
 import WallsOne from "../../assets/projects/walls/wall_2.png"
 import DecksOne from "../../assets/projects/decks/deck_1.webp"
