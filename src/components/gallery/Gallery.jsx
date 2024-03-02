@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 
 import GalleryInfo from "./GalleryInfo";
 
@@ -183,12 +184,12 @@ const projectsData = [
   // * FLOORING
   {
     id: 28,
-    smallImage: FlooringTwo,
+    smallImage: FlooringFour,
     category: "flooring",
   },
   {
     id: 29,
-    smallImage: FlooringFour,
+    smallImage: FlooringTwo,
     category: "flooring",
   },
   {
@@ -198,20 +199,20 @@ const projectsData = [
   },
   {
     id: 31,
-    smallImage: FlooringThree,
-    category: "flooring",
-  },
-  {
-    id: 32,
     smallImage: FlooringOne,
     category: "flooring",
   },
   {
-    id: 33,
+    id: 32,
     smallImage: FlooringFive,
     category: "flooring",
   },
-  // * STAIRS & DECKS 
+  {
+    id: 33,
+    smallImage: FlooringThree,
+    category: "flooring",
+  },
+  // * STAIRS & DECKS
   {
     id: 34,
     smallImage: DeckOne,
@@ -263,12 +264,16 @@ const projectsNav = [
   {
     name: "stairs&decks",
   },
+  {
+    name: "additions",
+  },
 ];
 
 const Gallery = () => {
   const [item, setItem] = useState({ name: "bathroom" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (item.name) {
@@ -282,27 +287,51 @@ const Gallery = () => {
   const handleClick = (e, index) => {
     setItem({ name: e.target.textContent.toLowerCase() });
     setActive(index);
+    closeDropdown();
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setDropdownOpen(false);
   };
 
   return (
-    <div>
-      <nav className="mb-12 max-w-xl mx-auto">
-        <ul className="flex flex-col md:flex-row justify-evenly items-center text-white">
-          {projectsNav.map((item, index) => (
-            <li
-              onClick={(e) => {
-                handleClick(e, index);
-              }}
-              className={`${
-                active === index ? "active" : ""
-              } cursor-pointer capitalize m-4`}
-              key={index}
-            >
-              {item.name}
-            </li>
-          ))}
-        </ul>
-      </nav>
+    <div className="flex flex-col items-center">
+      <div className="relative mb-12 max-w-xl mx-auto">
+        {item.name && (
+          <div className="mt-2 text-xl text-white">
+            {" "}
+            Currently Viewing: <span className="font-bold capitalize text-primary">{item.name}</span>
+          </div>
+        )}
+        <div
+          onClick={toggleDropdown}
+          className="cursor-pointer capitalize m-4 flex items-center justify-center text-tertiary bg-primary rounded-md py-2 px-4 hover:bg-secondary hover:text-white transition-all duration-300 ease-in-out"
+        >
+          Click here to view more{" "}
+          <IoIosArrowDown className="inline-block ml-2" />
+        </div>
+        {isDropdownOpen && (
+          <ul className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-white text-tertiary rounded-md shadow-lg">
+            {projectsNav.map((item, index) => (
+              <li
+                onClick={(e) => {
+                  handleClick(e, index);
+                }}
+                className={`${
+                  active === index ? "active" : ""
+                } cursor-pointer capitalize px-4 py-2`}
+                key={index}
+              >
+                {item.name}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
       <section className="grid gap-y-12 md:grid-cols-2 md:gap-x-6 md:gap-y-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8">
         {projects.map((project) => (
           <GalleryInfo item={project} key={project.id} />
