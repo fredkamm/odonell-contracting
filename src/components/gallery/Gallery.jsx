@@ -32,6 +32,7 @@ import WindowThree from "../../assets/projects/windows/windows_3.png";
 import WindowFour from "../../assets/projects/windows/windows_4.webp";
 
 import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
+import FlooringTwo from "../../assets/projects/flooring/flooring_2.webp";
 import FlooringThree from "../../assets/projects/flooring/flooring_3.webp";
 
 const projectsData = [
@@ -177,7 +178,7 @@ const projectsData = [
   },
   {
     id: 29,
-    smallImage: FlooringThree,
+    smallImage: FlooringTwo,
     category: "flooring",
   },
   {
@@ -187,7 +188,7 @@ const projectsData = [
   },
   {
     id: 31,
-    smallImage: FlooringOne,
+    smallImage: FlooringTwo,
     category: "flooring",
   },
   {

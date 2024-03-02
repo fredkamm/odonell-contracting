@@ -4,19 +4,22 @@ import { Link } from 'react-router-dom';
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
+// import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
 import KitchenOne from "../../assets/projects/kitchen/kitchen_4.webp";
 import WindowsOne from "../../assets/projects/windows/windows_4.png"
 import WallsOne from "../../assets/projects/walls/wall_2.png"
 import DecksOne from "../../assets/projects/decks/deck_1.webp"
 
+import PoolHouse from "../../assets/projects/carousel/pool_house.webp"
+import Fireplace from "../../assets/projects/carousel/fireplace.webp"
+
 export default function Carousel() {
   const slides = [
     {
-      url: FlooringOne,
+      url: PoolHouse,
     },
     {
-      url: KitchenOne,
+      url: Fireplace,
     },
     {
       url: WindowsOne,
@@ -61,7 +64,7 @@ export default function Carousel() {
     <div className="max-w-[1400px] h-[600px] w-full m-auto pt-4 pb-16 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full bg-center bg-cover duration-500"
+        className="w-full h-full bg-center bg-contain bg-no-repeat duration-500"
       ></div>
       <Link 
         className="flex justify-center p-4 bg-tertiary text-white"
