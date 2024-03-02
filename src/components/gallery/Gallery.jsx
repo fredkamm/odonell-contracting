@@ -29,7 +29,7 @@ import DeckTwo from "../../assets/projects/decks/deck_2.webp";
 import WindowOne from "../../assets/projects/windows/windows_1.png";
 import WindowTwo from "../../assets/projects/windows/windows_2.png";
 import WindowThree from "../../assets/projects/windows/windows_3.png";
-import WindowFour from "../../assets/projects/windows/windows_4.webp";
+import WindowFour from "../../assets/projects/windows/windows_3.png";
 
 import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
 import FlooringTwo from "../../assets/projects/flooring/flooring_2.webp";

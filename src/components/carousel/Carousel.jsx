@@ -4,31 +4,29 @@ import { Link } from 'react-router-dom';
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-// import FlooringOne from "../../assets/projects/flooring/flooring_1.webp";
-import KitchenOne from "../../assets/projects/carousel/kitchen_2.webp";
-import WindowsOne from "../../assets/projects/windows/windows_4.png"
-import WallsOne from "../../assets/projects/walls/wall_2.png"
-import DecksOne from "../../assets/projects/decks/deck_1.webp"
+import KitchenOne from "../../assets/projects/carousel/kitchen_1.webp";
+import KitchenFour from "../../assets/projects/carousel/kitchen_4.webp";
+import KitchenSix from "../../assets/projects/carousel/kitchen_6.webp";
+import Bathroom from "../../assets/projects/carousel/bathroom.webp";
+import Deck from "../../assets/projects/carousel/deck.webp";
 
-import PoolHouse from "../../assets/projects/carousel/pool_house.webp"
-import Fireplace from "../../assets/projects/carousel/fireplace.webp"
 
 export default function Carousel() {
   const slides = [
     {
+      url: KitchenSix,
+    },
+    {
       url: KitchenOne,
     },
     {
-      url: Fireplace,
+      url: KitchenFour,
     },
     {
-      url: WindowsOne,
+      url: Bathroom,
     },
     {
-      url: WallsOne,
-    },
-    {
-      url: DecksOne,
+      url: Deck,
     },
   ];
 
