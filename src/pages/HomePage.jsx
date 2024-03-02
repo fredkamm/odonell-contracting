@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import Carousel from "../components/carousel/Carousel";
-import BannerImage from "../assets/images/banner.webp";
+import BannerImage from "../assets/projects/carousel/kitchen_2.webp";
 import Image from "../assets/images/TJOD_Logo.webp";
 
 import { Link } from "react-router-dom";

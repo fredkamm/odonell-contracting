@@ -43,7 +43,7 @@ export default function Footer() {
               })}
             </div>
             <p className="text-paragraph opacity-80 text-[15px] pt-3">
-              &copy; 2024 copyright <b>Fred Kamm</b>
+              &copy; 2024 <b>All Rights Reserved</b>
             </p>
           </div>
         </div>
