@@ -32,6 +32,10 @@ import WallSix from "../../assets/projects/walls/wall_5.webp";
 
 import DeckOne from "../../assets/projects/decks/deck_1.webp";
 import DeckTwo from "../../assets/projects/decks/deck_2.webp";
+import DeckThree from "../../assets/projects/decks/deck_3.webp";
+import DeckFour from "../../assets/projects/decks/deck_4.webp";
+import DeckFive from "../../assets/projects/decks/deck_5.webp";
+import StairsOne from "../../assets/projects/decks/stairs_1.webp";
 
 import WindowTwo from "../../assets/projects/windows/windows_2.webp";
 import WindowThree from "../../assets/projects/windows/windows_3.webp";
@@ -251,22 +255,22 @@ const projectsData = [
   },
   {
     id: 39,
-    smallImage: DeckTwo,
+    smallImage: DeckThree,
     category: "stairs&decks",
   },
   {
     id: 40,
-    smallImage: DeckTwo,
+    smallImage: StairsOne,
     category: "stairs&decks",
   },
   {
     id: 41,
-    smallImage: DeckTwo,
+    smallImage: DeckFour,
     category: "stairs&decks",
   },
   {
     id: 42,
-    smallImage: DeckTwo,
+    smallImage: DeckFive,
     category: "stairs&decks",
   },
   // * ADDITIONS
