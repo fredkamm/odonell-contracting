@@ -19,10 +19,16 @@ import KitchenThree from "../../assets/projects/kitchen/kitchen_3.webp";
 import KitchenFour from "../../assets/projects/kitchen/kitchen_4.webp";
 import KitchenFive from "../../assets/projects/kitchen/kitchen_5.webp";
 import KitchenSix from "../../assets/projects/kitchen/kitchen_6.webp";
+import KitchenSeven from "../../assets/projects/kitchen/kitchen_7.webp";
+import KitchenEight from "../../assets/projects/kitchen/kitchen_8.webp";
+import KitchenNine from "../../assets/projects/kitchen/kitchen_9.webp";
 
-import WallOneSmall from "../../assets/projects/walls/wall.jpg";
-import WallTwo from "../../assets/projects/walls/wall_2.png";
+import WallOne from "../../assets/projects/walls/wall.webp";
+import WallTwo from "../../assets/projects/walls/wall_2.webp";
 import WallThree from "../../assets/projects/walls/wall_1.webp";
+import WallFour from "../../assets/projects/walls/wall_3.webp";
+import WallFive from "../../assets/projects/walls/wall_4.webp";
+import WallSix from "../../assets/projects/walls/wall_5.webp";
 
 import DeckOne from "../../assets/projects/decks/deck_1.webp";
 import DeckTwo from "../../assets/projects/decks/deck_2.webp";
@@ -40,6 +46,11 @@ import FlooringThree from "../../assets/projects/flooring/flooring_3.webp";
 import FlooringFour from "../../assets/projects/flooring/flooring_4.webp";
 import FlooringFive from "../../assets/projects/flooring/flooring_5.webp";
 import FlooringSix from "../../assets/projects/flooring/flooring_6.webp";
+
+import PoolHouseTwo from "../../assets/projects/additions/poolhouse.webp";
+import AdditionOne from "../../assets/projects/additions/addition_1.webp";
+import AdditionTwo from "../../assets/projects/additions/addition_2.webp";
+import AdditionThree from "../../assets/projects/additions/addition_3.webp";
 
 const projectsData = [
   // * BATHROOM
@@ -119,56 +130,56 @@ const projectsData = [
     smallImage: KitchenSix,
     category: "Kitchen",
   },
-  // * DOORS & WINDOWS
   {
     id: 16,
+    smallImage: KitchenSeven,
+    category: "Kitchen",
+  },
+  {
+    id: 17,
+    smallImage: KitchenEight,
+    category: "Kitchen",
+  },
+  {
+    id: 18,
+    smallImage: KitchenNine,
+    category: "Kitchen",
+  },
+  // * DOORS & WINDOWS
+  {
+    id: 19,
     smallImage: DoorTwo,
     category: "doors&windows",
   },
   {
-    id: 17,
+    id: 20,
     smallImage: WindowTwo,
     category: "doors&windows",
   },
   {
-    id: 18,
+    id: 21,
     smallImage: WindowThree,
     category: "doors&windows",
   },
   {
-    id: 19,
+    id: 22,
     smallImage: WindowFour,
     category: "doors&windows",
   },
   {
-    id: 20,
+    id: 23,
     smallImage: DoorThree,
     category: "doors&windows",
   },
   {
-    id: 21,
+    id: 24,
     smallImage: DoorOne,
     category: "doors&windows",
   },
   // * WALLS & PAINTING
   {
-    id: 22,
-    smallImage: WallOneSmall,
-    category: "walls&painting",
-  },
-  {
-    id: 23,
-    smallImage: WallTwo,
-    category: "walls&painting",
-  },
-  {
-    id: 24,
-    smallImage: WallThree,
-    category: "walls&painting",
-  },
-  {
     id: 25,
-    smallImage: WallTwo,
+    smallImage: WallOne,
     category: "walls&painting",
   },
   {
@@ -178,59 +189,59 @@ const projectsData = [
   },
   {
     id: 27,
-    smallImage: WallTwo,
+    smallImage: WallThree,
+    category: "walls&painting",
+  },
+  {
+    id: 28,
+    smallImage: WallFour,
+    category: "walls&painting",
+  },
+  {
+    id: 29,
+    smallImage: WallFive,
+    category: "walls&painting",
+  },
+  {
+    id: 30,
+    smallImage: WallSix,
     category: "walls&painting",
   },
   // * FLOORING
   {
-    id: 28,
+    id: 31,
     smallImage: FlooringFour,
     category: "flooring",
   },
   {
-    id: 29,
+    id: 32,
     smallImage: FlooringTwo,
     category: "flooring",
   },
   {
-    id: 30,
+    id: 33,
     smallImage: FlooringSix,
     category: "flooring",
   },
   {
-    id: 31,
+    id: 34,
     smallImage: FlooringOne,
     category: "flooring",
   },
   {
-    id: 32,
+    id: 35,
     smallImage: FlooringFive,
     category: "flooring",
   },
   {
-    id: 33,
+    id: 36,
     smallImage: FlooringThree,
     category: "flooring",
   },
   // * STAIRS & DECKS
   {
-    id: 34,
-    smallImage: DeckOne,
-    category: "stairs&decks",
-  },
-  {
-    id: 35,
-    smallImage: DeckTwo,
-    category: "stairs&decks",
-  },
-  {
-    id: 36,
-    smallImage: DeckTwo,
-    category: "stairs&decks",
-  },
-  {
     id: 37,
-    smallImage: DeckTwo,
+    smallImage: DeckOne,
     category: "stairs&decks",
   },
   {
@@ -242,6 +253,42 @@ const projectsData = [
     id: 39,
     smallImage: DeckTwo,
     category: "stairs&decks",
+  },
+  {
+    id: 40,
+    smallImage: DeckTwo,
+    category: "stairs&decks",
+  },
+  {
+    id: 41,
+    smallImage: DeckTwo,
+    category: "stairs&decks",
+  },
+  {
+    id: 42,
+    smallImage: DeckTwo,
+    category: "stairs&decks",
+  },
+  // * ADDITIONS
+  {
+    id: 43,
+    smallImage: PoolHouseTwo,
+    category: "additions",
+  },
+  {
+    id: 44,
+    smallImage: AdditionOne,
+    category: "additions",
+  },
+  {
+    id: 45,
+    smallImage: AdditionTwo,
+    category: "additions",
+  },
+  {
+    id: 46,
+    smallImage: AdditionThree,
+    category: "additions",
   },
 ];
 

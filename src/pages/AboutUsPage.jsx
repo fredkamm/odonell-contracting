@@ -5,7 +5,7 @@ import Image from "../assets/images/TJOD_Logo.webp";
 
 export default function AboutUsPage() {
   return (
-    <section className="section bg-secondary my-[50px]">
+    <section className="section bg-secondary my-[50px] xl:mb-[200px]">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img

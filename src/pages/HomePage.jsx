@@ -74,7 +74,7 @@ export default function HomePage() {
         </Link>
       </section>
       <section className="container mx-auto my-[200px]">
-        <div className="flex flex-col md:flex-row gap-24">
+        <div className="flex flex-col md:flex-row gap-24 ">
           <img
             className="object-cover h-full w-[250px] mx-auto md:mx-auto rounded-2xl scale-110"
             src={Image}
