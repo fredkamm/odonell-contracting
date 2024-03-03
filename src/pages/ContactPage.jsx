@@ -71,7 +71,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="section bg-secondary xl:mb-[150px]">
+    <section className="section bg-secondary">
       <div className="container mx-auto mt-5">
         <div className="flex flex-col items-center text-center">
           <h2 className="section-title before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block">
