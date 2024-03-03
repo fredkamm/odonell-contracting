@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
-import Logo from "../../assets/images/url_logo.png";
+import { Link } from "react-router-dom";
 
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -28,15 +26,17 @@ export default function Footer() {
             <p>tjodhomeimprovement@gmail.com</p>
             <p>Bucks & Montgomery County</p>
           </div>
-          {/* <div>
-            <img className="max-h-[55px] max-w-[51px]" src={Logo} alt="" />
-          </div> */}
           <div className="flex flex-col">
             <div className="flex flex-row space-x-6 items-center justify-center">
               {social.map((item, index) => {
                 const { href, icon, label } = item;
                 return (
-                  <Link to={href} aria-label={label} className="text-accent text-base"  key={index}>
+                  <Link
+                    to={href}
+                    aria-label={label}
+                    className="text-accent text-base"
+                    key={index}
+                  >
                     {icon}
                   </Link>
                 );

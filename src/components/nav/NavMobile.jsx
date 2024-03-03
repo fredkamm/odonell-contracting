@@ -1,40 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-// import icons
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 
-// import Link
-import { Link } from "react-router-dom";
-
-// import framer
-import { motion } from "framer-motion";
-
-// import navigation data
-const navigation = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About Us",
-    href: "/about",
-  },
-  {
-    name: "Gallery",
-    href: "/gallery",
-  },
-  {
-    name: "Services",
-    href: "/services",
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
-];
-
-// import components
+import  navigation  from "../../assets/data/navBar";
 import Socials from "../nav/Socials";
 
 const NavMobile = () => {

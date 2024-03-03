@@ -1,28 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-
-const navigation = [
-  {
-    name: "home",
-    href: "/",
-  },
-  {
-    name: "about us",
-    href: "/about",
-  },
-  {
-    name: "gallery",
-    href: "/gallery",
-  },
-  {
-    name: "services",
-    href: "/services",
-  },
-  {
-    name: "contact",
-    href: "/contact",
-  },
-];
+import  navigation  from "../../assets/data/navBar";
 
 const Nav = () => {
   const location = useLocation();
