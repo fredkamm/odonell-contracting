@@ -44,12 +44,6 @@ const services = [
       "Increase your home's living space by adding new rooms or expanding existing ones. Our home addition services seamlessly integrate with your current structure, providing a tailored solution to meet your needs.",
   },
   {
-    icon: <MdRoofing />,
-    name: "Roofing Services",
-    description:
-      "Ensure the protection and longevity of your home with our roofing services. Whether you need repairs or a full replacement, our team specializes in high-quality roofing materials and expert installation for a secure and durable roof.",
-  },
-  {
     icon: <Gi3DStairs />,
     name: "Floor Installation",
     description:
@@ -72,18 +66,6 @@ const services = [
     name: "Garage Renovation",
     description:
       "Repurpose or upgrade your garage to serve as additional living space. Our renovation services can transform your garage into a home gym, office, or guest suite, enhancing both functionality and value.",
-  },
-  {
-    icon: <TbAirConditioning />,
-    name: "HVAC System Installation or Upgrade",
-    description:
-      "Ensure year-round comfort with our HVAC system installation or upgrade services. From installing new units to upgrading existing systems, we provide efficient and effective climate control solutions for your home.",
-  },
-  {
-    icon: <PiPottedPlantBold />,
-    name: "Landscaping and Outdoor Renovation",
-    description:
-      "Elevate your outdoor living experience with our landscaping and renovation services. From patios and walkways to lush landscaping, we create inviting outdoor spaces that complement your home.",
   },
 ];
 
