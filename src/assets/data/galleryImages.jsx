@@ -7,6 +7,15 @@ import BathroomSix from "../../assets/projects/bathroom/bathroom_6.webp";
 import BathroomSeven from "../../assets/projects/bathroom/bathroom_7.webp";
 import BathroomEight from "../../assets/projects/bathroom/bathroom_8.webp";
 import BathroomNine from "../../assets/projects/bathroom/bathroom_9.webp";
+import BathroomTen from "../../assets/projects/bathroom/IMG_2024.webp";
+import BathroomEleven from "../../assets/projects/bathroom/IMG_2027.webp";
+import BathroomTwelve from "../../assets/projects/bathroom/IMG_2018.webp";
+import BathroomThirteen from "../../assets/projects/bathroom/IMG_2017.webp";
+import BathroomFourteen from "../../assets/projects/bathroom/IMG_2019.webp";
+import BathroomFifteen from "../../assets/projects/bathroom/IMG_2020.webp";
+import BathroomSixteen from "../../assets/projects/bathroom/IMG_2021.webp";
+import BathroomSeventeen from "../../assets/projects/bathroom/IMG_2022.webp";
+import BathroomEighteen from "../../assets/projects/bathroom/IMG_2023.webp";
 
 import KitchenOne from "../../assets/projects/kitchen/kitchen_1.webp";
 import KitchenTwo from "../../assets/projects/kitchen/kitchen_2.webp";
@@ -53,6 +62,52 @@ import AdditionThree from "../../assets/projects/additions/addition_3.webp";
 
 const projectsData = [
   // * BATHROOM
+  {
+    id: 10,
+    smallImage: BathroomTen,
+    category: "Bathroom",
+  },
+  {
+    id: 11,
+    smallImage: BathroomEleven,
+    category: "Bathroom",
+  },
+  {
+    id: 12,
+    smallImage: BathroomTwelve,
+    category: "Bathroom",
+  },
+  {
+    id: 13,
+    smallImage: BathroomThirteen,
+    category: "Bathroom",
+  },
+  {
+    id: 14,
+    smallImage: BathroomFourteen,
+    category: "Bathroom",
+  },
+  {
+    id: 15,
+    smallImage: BathroomFifteen,
+    category: "Bathroom",
+
+  },
+  {
+    id: 16,
+    smallImage: BathroomSixteen,
+    category: "Bathroom",
+  },
+  {
+    id: 17,
+    smallImage: BathroomSeventeen,
+    category: "Bathroom",
+  },
+  {
+    id: 18,
+    smallImage: BathroomEighteen,
+    category: "Bathroom",
+  },
   {
     id: 1,
     smallImage: BathroomOne,
